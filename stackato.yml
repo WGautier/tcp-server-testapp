@@ -1,0 +1,9 @@
+name: tcp-server
+instances: 1
+framework:
+  type: standalone
+  runtime: ruby19
+command: ruby server.rb
+mem: 128
+services:
+  harbor-${name}: harbor
